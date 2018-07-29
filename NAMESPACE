@@ -1,0 +1,16 @@
+useDynLib(vennplot, .registration = TRUE)
+
+### Exports ####################################################################
+
+export(vennplot)
+
+
+### Imports ####################################################################
+
+importFrom("rgl", "open3d", "spheres3d", "persp3d", "text3d")
+importFrom("stringr", "str_count", "str_split")
+importFrom("Rcpp", "evalCpp")
+importFrom("grDevices", "rainbow")
+importFrom("graphics", "par", "plot.new", "plot.window", "polygon", "text")
+importFrom("stats","runif", "optim", "optimize", "aggregate", "lm")
+importFrom("utils","combn")
